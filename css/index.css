@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #333333;
+    color: #ffffff;
+    position: fixed;
+    z-index:20;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 0 50px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    overflow: hidden;
+    float: left;
+}
+li:first-child{
+    border-left:1px solid #aaaaaa;
+}
+li{
+    float: left;
+    padding:0 10px;
+    border-right:1px solid #aaaaaa;
+    cursor: pointer;
+}
+li#info{
+    color:red;
+}
+li:hover{
+    background-color: #99fa82;
+    box-shadow:0 0 10px 1px #99fa82 ;
+    color: #333333;
+}
+
+#tip{
+    display: none;
+    min-width: 200px;
+    position: absolute;
+    z-index: 19;
+    background-color: rgba(50,111,39,0.62);
+    color: #ffffff;
+    text-align: center;
+    padding:30px;
+    border-radius: 50px;
+    border-top-left-radius:0;
+}
+
+#tip h1{
+    margin-bottom:10px;
+}
+#tip span{
+    line-height:24px;
+}
+#ok{
+    font-size:24px;
+    line-height:30px;
+    background-color: rgba(77,213,65,0.99);
+    width: 100px;
+    margin:0 auto;
+    margin-top:20px;
+    border-radius: 5px;
+    padding: 7px;
+}
+#ok:hover{
+    -webkit-box-shadow:  0px 0px 10px 2px #ffffff;
+    -moz-box-shadow:  0px 0px 10px 2px #ffffff;
+    box-shadow:  0px 0px 10px 2px #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+div.head-r{
+    float: right;
+    overflow: hidden;
+}
+p{
+    float: left;
+    padding-right:5px;
+    margin-right: 5px;
+}
+p:first-child{
+    border-right:1px solid #ffffff;
+}
+
+
+
+
+table,tbody{
+    position: relative;
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid black;
+}
+
+.snake{
+    position: absolute;
+    z-index: 10;
+}
+.snakeHead{
+    background-color: #fa1f07;
+}
+div.food{
+    background-image: url(../imgs/food.png);
+    z-index: 5;
+}
+

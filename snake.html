@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>贪吃蛇+</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/phone.css" media="screen and (max-width:780px)">
+    <link rel="stylesheet" href="css/pc.css" media="screen and (min-width:781px)">
+    <script src="js/jquery-3.2.1.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <ul>
+            <li id="begin">开始</li>
+            <li id="pause">暂停</li>
+            <li id="again">再来</li>
+            <li id="info">规则</li>
+        </ul>
+        <div class="head-r">
+            <p id="score">得分: <span>0</span></p>
+            <p id="record">记录: <span>0</span></p>
+        </div>
+    </header>
+    <aside id="tip">
+        <h1>规则</h1>
+        <span>上下左右：小键盘方向键或wasd</span>
+        <br>
+        <span>空格加速，长按一直加速</span>
+        <div id="ok">知道了</div>
+    </aside>
+    <table>
+       <tbody>
+       <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+       </tbody>
+    </table>
+    <div id="control">
+        <div class="left">
+            <div class="left-btn btn"></div>
+        </div>
+        <div class="mid">
+            <div class="mid-1">
+                <div class="top-btn btn"></div>
+            </div>
+            <div class="mid-2 btn">
+                速度不够快？
+            </div>
+            <div class="mid-3" >
+                <div class="bottom-btn btn"></div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-btn btn"></div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

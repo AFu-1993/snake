@@ -1,0 +1,51 @@
+header{
+    height:40px;
+    line-height:40px;
+}
+
+
+#tip{
+    width:400px;
+    right:45%;
+    top: 60px;
+    padding:30px;
+}
+
+
+
+
+
+
+table{
+    margin: 50px auto;
+}
+td{
+    width:50px;
+    height: 50px;
+}
+body{
+    background-color: #ffffff;
+}
+
+
+
+.snakeHead{
+    background-color: red;
+}
+.snakeBody{
+    background-color: green;
+}
+.snake{
+    width:50px;
+    height: 50px;
+    position: absolute;
+}
+.food{
+    -webkit-background-size: 50px 50px;
+    background-size: 50px 50px;
+}
+
+
+#control{
+    display: none;
+}
